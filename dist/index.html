@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind.css 练习</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./tailwind.css">
+</head>
+
+<body>
+    <header class="  bg-github-bg h-3.75 w-full flex justify-between">
+        <div class="flex">
+            <div class="flex items-center">
+                <i class="fa-brands fa-github ml-6 text-3xl mb-2 rounded-full w-9 h-9 p-1 text-white"></i>
+                <input placeholder="Search or jump to..." type="text"
+                    class="placeholder-gray-300 pl-3 border text-xs border-gray-500  w-72 h-7 m-4 rounded bg-transparent">
+                <div class="-ml-10 border text-sm border-gray-400 w-5 rounded-md text-center text-gray-400">/</div>
+            </div>
+            <ui class="list-none flex justify-around  items-center text-white text-sm font-semibold">
+                <li class="ml-5">Pull requests</li>
+                <li class="ml-4">lssues</li>
+                <li class="ml-4">Codespaces</li>
+                <li class="ml-4">Markeplace</li>
+                <li class="ml-4">Explore</li>
+            </ui>
+        </div>
+        <div class="flex items-center justify-between w-32 ">
+            <i class="fa-sharp fa-regular fa-bell -mr-2 text-white"></i>
+            <i class="fa-regular fa-plus -mr-5 text-sm text-white"></i>
+            <i class="fa-solid fa-caret-down -mr-2 text-sm text-white"></i>
+            <i class="fa-regular fa-face-grin-wide -mr-5 text-sm text-red-300"></i>
+            <i class="fa-solid fa-caret-down mr-4 text-sm text-white"></i>
+        </div>
+    </header>
+    <main class="flex flex-col w-full">
+        <div class="flex justify-between h-20 items-center w-full">
+            <div class="flex items-center  ">
+                <svg t="1680175796682" class="icon  ml-8" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" p-id="1478" width="16" height="16">
+                    <path
+                        d="M192 736h640V128H256a64.768 64.768 0 0 0-64 64v544zM256 64h608c9.344 0 17.024 3.008 23.04 8.96 5.952 6.016 8.96 13.696 8.96 23.04V768a31.168 31.168 0 0 1-8.96 23.04 31.168 31.168 0 0 1-23.04 8.96h-704l-32 57.984V192c0.64-36.032 13.184-66.176 37.504-90.496 24.32-24.32 54.528-36.8 90.496-37.504z m-16 736a49.088 49.088 0 0 0-33.472 14.464 45.44 45.44 0 0 0-13.568 33.536c0 13.312 4.48 24.512 13.568 33.536 8.96 8.96 20.16 13.824 33.472 14.464H832v-96H240z m0-64H896V896a64.832 64.832 0 0 1-64 64H240c-32-0.64-58.496-11.52-79.488-32.512-20.992-20.992-31.808-47.488-32.512-79.488 0.64-32 11.52-58.496 32.512-79.488 20.992-20.992 47.488-31.808 79.488-32.512zM384 128v251.008l96-76.992L576 379.008V128H384zM320 64h320v380.992a31.232 31.232 0 0 1-18.496 28.544 30.144 30.144 0 0 1-33.536-3.52L480 384 371.968 470.016a30.144 30.144 0 0 1-33.472 3.456A31.232 31.232 0 0 1 320 445.056V64z"
+                        fill="#2c2c2c" p-id="1479"></path>
+                </svg>
+                <div class="ml-2 text-lg text-blue-600">tailwindlabs <span
+                        class="text-gray-600 mr-1">/</span>tailwindcss</div>
+                <div class="rounded-2xl border-gray-400 border mb-3 text-xs text-center w-12 text-gray-500 ml-3 h-5">
+                    public</div>
+            </div>
+            <div>
+                <ui class="list-none flex justify-between items-center">
+                    <li class="flex items-center border h-7 rounded-lg border-gray-300 text-xs p-0.5 w-36 mr-3">
+                        <i class="fa-sharp fa-regular fa-eye text-gray-500 ml-2 mr-1"></i>
+                        <div>Watch</div>
+                        <div class="bg-gray-100 rounded-xl w-12 ml-2 text-center h-5 leading-5">590</div>
+                        <i class="fa-solid fa-caret-down ml-2 text-xs text-gray-500"></i>
+                    </li>
+                    <li class="flex items-center border h-7 rounded-lg border-gray-300 text-xs p-0.5 w-36 mr-3">
+                        <i class="fa-sharp fa-solid fa-code-fork   text-gray-500 ml-2 mr-1"></i>
+                        <div>Fork</div>
+                        <div class="bg-gray-100 rounded-xl w-12 ml-2 text-center h-5 leading-5">3.4k</div>
+                        <i class="fa-solid fa-caret-down ml-2 text-xs text-gray-500"></i>
+                    </li>
+                    <li class="flex items-center border h-7 rounded-lg border-gray-300 text-xs p-0.5 w-36 mr-3">
+                        <i class="fa-regular fa-star text-gray-500 ml-2 mr-1"></i>
+                        <div>Star</div>
+                        <div class="bg-gray-100 rounded-xl w-12 ml-2 text-center h-5 leading-5">66.4k</div>
+                        <i class="fa-solid fa-caret-down ml-2 text-xs text-gray-500"></i>
+                    </li>
+                </ui>
+            </div>
+        </div>
+        <ul class="flex justify-around w-2/5 text-xs h-7 ml-5 ">
+            <li class="border-orange-500 border-b">
+                <i class="fa-solid fa-code mr-1"></i>
+                Code
+            </li>
+            <li>
+                <i class="fa-regular fa-circle-dot  mr-1"></i>
+                lssues
+                <span class="bg-gray-200 rounded-full w-5 leading-5 h-5 inline-block text-center">4</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-code-pull-request mr-1"></i>
+                Pull requests
+                <span class="bg-gray-200 rounded-full w-5 leading-5 h-5 inline-block text-center">4</span>
+            </li>
+            <li>
+                <i class="fa-regular fa-comments  mr-1"></i>
+                Discussions
+            </li>
+            <li>
+                <i class="fa-regular fa-circle-play mr-1"></i>
+                Action
+            </li>
+            <li>
+                <i class="fa-solid fa-exclamation mr-1"></i>
+                Security
+            </li>
+            <li>
+                <i class="fa-solid fa-chart-line mr-1"></i>
+                lnsights
+            </li>
+        </ul>
+        <hr>
+        <div class="flex w-3/5 justify-center  m-auto mb-10">
+            <div class="w-9/12">
+                <div class="flex justify-between items-center my-5 w-full">
+                    <div>
+                        <ui class="list-none flex justify-between items-center">
+                            <li
+                                class="flex items-center border h-8 rounded-lg border-gray-300 text-xs p-0.5 w-28  bg-gray-100 justify-center">
+                                <i class="fa-solid fa-code-branch  text-gray-500  mr-2"></i>
+                                <div>master</div>
+                                <i class="fa-solid fa-caret-down ml-2 text-xs text-gray-500"></i>
+                            </li>
+                            <li class="flex items-center h-8 text-xs p-0.5 w-28 justify-center ">
+                                <i class="fa-solid fa-code-branch  ml-3 mr-2 text-gray-900"></i>
+                                <div><b>61</b> branches</div>
+                            </li>
+                            <li class="flex items-center h-8 text-xs p-0.5 w-24 justify-center ">
+                                <svg t="1680175272983" class="icon mr-2" viewBox="0 0 1024 1024" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" p-id="5340" width="16" height="16">
+                                    <path
+                                        d="M361.645 361.713c-27 27-70.775 26.991-97.784-0.017-27.007-27.007-27.023-70.788-0.021-97.789 27.028-27.027 70.811-27.014 97.818-0.007 27.007 27.009 27.016 70.784-0.013 97.813z"
+                                        fill="#2c2c2c" p-id="5341"></path>
+                                    <path
+                                        d="M574.215 926.51c-17.624 0-34.175-6.818-46.611-19.21L134.942 514.594c-21.355-21.312-37.478-60.206-37.478-90.479V163.356c0-36.32 29.545-65.865 65.866-65.865h260.759c29.717 0 69.467 16.467 90.479 37.478l392.704 392.704c25.686 25.686 25.686 67.452 0 93.138L620.783 907.298c-12.435 12.393-28.987 19.212-46.568 19.212zM163.328 141.4c-12.093 0-21.955 9.863-21.955 21.955v260.76c0 18.268 11.707 46.568 24.614 59.433l392.662 392.704c8.233 8.233 22.855 8.233 31.089 0l286.488-286.488c8.577-8.577 8.577-22.47 0-31.046L483.522 166.014c-12.865-12.865-41.209-24.614-59.433-24.614H163.328z"
+                                        fill="#2c2c2c" p-id="5342"></path>
+                                </svg>
+                                <div><b>229</b> tags</div>
+                            </li>
+
+                        </ui>
+                    </div>
+                    <div>
+                        <ui class="list-none flex justify-between items-center">
+                            <li
+                                class="flex items-center border h-8 rounded-lg border-gray-300 bg-gray-100 text-xs p-0.5 w-24 justify-center ">
+                                <b>GO to file</b>
+                            </li>
+                            <li
+                                class="flex items-center border h-8 rounded-lg border-gray-300 bg-gray-100 text-xs p-0.5 w-24 justify-center ml-2">
+                                <b>Add fil</b>
+                                <i class="fa-solid fa-caret-down ml-2 text-xs text-gray-500"></i>
+                            </li>
+                            <li
+                                class="flex items-center border h-8 rounded-lg border-gray-300 text-xs p-0.5 w-24 justify-center bg-green-600 text-white ml-2 clearfix">
+                                <i class="ml-5 mr-2">
+                                    <svg t="1680176127777" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" p-id="3459" width="16" height="16">
+                                        <path
+                                            d="M621.994667 708.010667l198.016-196.010667-198.016-196.010667 59.989333-59.989333 256 256-256 256zM402.005333 708.010667l-59.989333 59.989333-256-256 256-256 59.989333 59.989333-198.016 196.010667z"
+                                            fill="#ffffff" p-id="3460"></path>
+                                    </svg>
+                                </i>
+                                <b>Code</b>
+                                <i class="fa-solid fa-caret-down ml-2 text-xs"></i>
+                            </li>
+
+                        </ui>
+                    </div>
+                </div>
+                <ul class="w-full border rounded-xl text-gray-500 mb-5">
+                    <li class="px-4 flex justify-between text-sm border-b border-gray-300  py-4 bg-gray-100">
+                        <div class="text-black"><b>RobinMalfait</b> Revert prepare of v3.3</div>
+                        <ul class="flex justify-between text-xs items-center">
+                            <li class="flex ">
+                                <svg t="1680183718229" class="icon mr-2" viewBox="0 0 1024 1024" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" p-id="5128" width="16" height="16">
+                                    <path
+                                        d="M892.064 261.888a31.936 31.936 0 0 0-45.216 1.472L421.664 717.248l-220.448-185.216a32 32 0 1 0-41.152 48.992l243.648 204.704a31.872 31.872 0 0 0 20.576 7.488 31.808 31.808 0 0 0 23.36-10.112L893.536 307.136a32 32 0 0 0-1.472-45.248z"
+                                        p-id="5129" fill="#1a7f37"></path>
+                                </svg>
+                                <span>76ed3dc</span>
+                            </li>
+                            <li class="ml-3 mr-3">2 days ago</li>
+                            <li class="flex">
+                                <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                                    width="16" data-view-component="true" class="octicon octicon-history ml-2 mr-1">
+                                    <path
+                                        d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z">
+                                    </path>
+                                </svg>
+                                5,118 commits
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300 ">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2">.github</span>
+                        <span class="truncate w-7/12 text-left"> ensure workflows run for the 3.3 branch</span>
+                        <span class="w-2/12 text-right ml-20"> 2 days ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">integrations</span>
+                        <span class="truncate w-7/12 text-left"> Try resolving config.default before config to ensure
+                            the
+                            config f…
+                        </span>
+                        <span class="w-2/12 text-right ml-20"> yesterday</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">jest</span>
+                        <span class="truncate w-7/12 text-left">
+                            add toHaveBeenWarned and toHaveBeenWarnedWith custom matchers</span>
+                        <span class="w-2/12 text-right ml-20"> 2 weeks ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">
+                            nesting</span>
+                        <span class="truncate w-7/12 text-left">Ensure to transpile the PostCSS Nesting plugin
+                            (tailwindcss/nesting)
+                            (#…</span>
+                        <span class="w-2/12 text-right ml-20"> last year</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 "> oxide</span>
+                        <span class="truncate w-7/12 text-left"> Add gradient color stop position utilities
+                            (#10886)</span>
+                        <span class="w-2/12 text-right ml-20"> 2 days ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">perf</span>
+                        <span class="truncate w-7/12 text-left">
+                            Performance improvements + memory leak fix (#3032)</span>
+                        <span class="w-2/12 text-right ml-20"> 3 days ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">scripts</span>
+                        <span class="truncate w-7/12 text-left">Separate stable and oxide engines (#10359)</span>
+                        <span class="w-2/12 text-right ml-20"> 2 months ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 "> src</span>
+                        <span class="truncate w-7/12 text-left">
+                            cleanup unused import</span>
+                        <span class="w-2/12 text-right ml-20">17 hours ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">standalone-cli</span>
+                        <span class="truncate w-7/12 text-left">Update warning message</span>
+                        <span class="w-2/12 text-right ml-20">last week</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">stubs</span>
+                        <span class="truncate w-7/12 text-left">
+                            Add gradient color stop position utilities (#10886)</span>
+                        <span class="w-2/12 text-right ml-20"> 2 days ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">tests</span>
+                        <span class="truncate w-7/12 text-left">Pull pseudo elements outside of :is and :has when using
+                            @apply (#…</span>
+                        <span class="w-2/12 text-right ml-20"> 19 hours ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg t="1680185998718" class="icon w-12-1 " viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="39086" width="18" height="18">
+                            <path
+                                d="M181 823h-31.1c-28.6 0-51.9-23.2-51.9-51.9V252.4c0-28.6 23.2-51.9 51.9-51.9H430l83 77.8h332c45.6 0 83 35 83 77.8v389.1c0 42.8-37.3 77.8-83 77.8H181z"
+                                p-id="39087" fill="#218bff"></path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">types</span>
+                        <span class="truncate w-7/12 text-left">Update the types for the safelist config (#10901)</span>
+                        <span class="w-2/12 text-right ml-20"> 18 hours ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true" class="octicon octicon-file color-fg-muted w-12-1">
+                            <path
+                                d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z">
+                            </path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">.editorconfig</span>
+                        <span class="truncate w-7/12 text-left">
+                            Convert new stuff to use ES6 modules</span>
+                        <span class="w-2/12 text-right ml-20"> 6 years ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true" class="octicon octicon-file color-fg-muted w-12-1">
+                            <path
+                                d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z">
+                            </path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">.eslintignore</span>
+                        <span class="truncate w-7/12 text-left">Separate stable and oxide engines (#10359)</span>
+                        <span class="w-2/12 text-right ml-20">2 months ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true" class="octicon octicon-file color-fg-muted w-12-1">
+                            <path
+                                d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z">
+                            </path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">.eslintrc.json</span>
+                        <span class="truncate w-7/12 text-left">
+                            Remove duplicate prettier.config.js settings from .eslintrc.json (#5087)</span>
+                        <span class="w-2/12 text-right ml-20"> 2 years ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true" class="octicon octicon-file color-fg-muted w-12-1">
+                            <path
+                                d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z">
+                            </path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">.gitignore</span>
+                        <span class="truncate w-7/12 text-left">
+                            Add script for running integration tests</span>
+                        <span class="w-2/12 text-right ml-20"> 2 months ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true" class="octicon octicon-file color-fg-muted w-12-1">
+                            <path
+                                d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z">
+                            </path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">.swcrc</span>
+                        <span class="truncate w-7/12 text-left">
+                            Oxide (#10252)</span>
+                        <span class="w-2/12 text-right ml-20"> 2 months ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 border-b border-gray-300">
+                        <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true" class="octicon octicon-file color-fg-muted w-12-1">
+                            <path
+                                d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z">
+                            </path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">variants.css</span>
+                        <span class="truncate w-7/12 text-left">JIT: Replace @tailwind screens with @tailwind variants
+                            (#4356)
+                        </span>
+                        <span class="w-2/12 text-right ml-20"> 2 years ago</span>
+                    </li>
+                    <li class="flex items-center text-xs p-3 bg-gray-100">
+                        <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" data-view-component="true" class="octicon octicon-file color-fg-muted w-12-1">
+                            <path
+                                d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z">
+                            </path>
+                        </svg>
+                        <span class="text-black flex w-2/12 truncate ml-2 ">package.json</span>
+                        <span class="truncate w-7/12 text-left">
+                            Add default interop to public available functions (#6348)</span>
+                        <span class="w-2/12 text-right ml-20">2 years ago</span>
+                    </li>
+                </ul>
+                <ul class="w-full border rounded-xl mb-5">
+                    <li class="px-4 flex border-b border-gray-300 py-3 items-center">
+                        <svg t="1680251843898" class="icon mr-3" viewBox="0 0 1296 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="2767" width="16" height="16">
+                            <path
+                                d="M297.683876 99.227959h958.119142a40.667196 40.667196 0 1 0 0-81.334393H297.683876a40.667196 40.667196 0 1 0 0 81.334393z"
+                                fill="#666666" p-id="2768"></path>
+                            <path
+                                d="M58.560763 58.560763m-58.560763 0a58.560763 58.560763 0 1 0 117.121525 0 58.560763 58.560763 0 1 0-117.121525 0Z"
+                                fill="#666666" p-id="2769"></path>
+                            <path
+                                d="M1255.803018 470.926132H297.683876a40.667196 40.667196 0 0 0 0 81.334392h958.119142a40.667196 40.667196 0 0 0 0-81.334392z"
+                                fill="#666666" p-id="2770"></path>
+                            <path
+                                d="M58.560763 511.593328m-58.560763 0a58.560763 58.560763 0 1 0 117.121525 0 58.560763 58.560763 0 1 0-117.121525 0Z"
+                                fill="#666666" p-id="2771"></path>
+                            <path
+                                d="M1255.803018 924.772041H297.683876a40.667196 40.667196 0 0 0 0 81.334393h958.119142a40.667196 40.667196 0 0 0 0-81.334393z"
+                                fill="#666666" p-id="2772"></path>
+                            <path
+                                d="M58.560763 965.439237m-58.560763 0a58.560763 58.560763 0 1 0 117.121525 0 58.560763 58.560763 0 1 0-117.121525 0Z"
+                                fill="#666666" p-id="2773"></path>
+                        </svg>
+                        README.md
+                    </li>
+                    <ul class="p-7">
+                        <li class="flex justify-center items-center my-4">
+                            <svg t="1680252111194" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="3047" width="20" height="20">
+                                <path
+                                    d="M277.333333 418.133333c31.274667-125.184 109.525333-187.733333 234.666667-187.733333 187.733333 0 211.242667 140.8 305.109333 164.266667 62.592 15.658667 117.333333-7.850667 164.266667-70.4-31.232 125.141333-109.482667 187.733333-234.666667 187.733333-187.733333 0-211.2-140.8-305.066666-164.266667-62.634667-15.701333-117.376 7.808-164.352 70.4zM42.581333 699.733333c31.274667-125.141333 109.525333-187.733333 234.666667-187.733333 187.776 0 211.2 140.8 305.152 164.266667 62.549333 15.701333 117.333333-7.808 164.266667-70.4-31.317333 125.184-109.525333 187.733333-234.666667 187.733333-187.776 0-211.242667-140.8-305.152-164.266667-62.549333-15.658667-117.333333 7.850667-164.266667 70.4z"
+                                    fill="#4DB6AC" p-id="3048"></path>
+                            </svg>
+                            Tailwind CSS
+                        </li>
+                        <li class="text-center my-4">
+                            A utility-first CSS framework for rapidly building custom user interfaces.
+                        </li>
+                        <li class="flex justify-center">
+                            <div class="w-9 bg-gray-600 h-5 text-xs text-white text-center leading-5 rounded-sm z-10">
+                                build
+                            </div>
+                            <div
+                                class="w-16 bg-green-600 h-5 text-xs text-white text-center leading-5 rounded-sm -ml-1 mr-1">
+                                passing
+                            </div>
+                            <div class="w-20 bg-gray-600 h-5 text-xs text-white text-center leading-5 rounded-sm z-10">
+                                downloads
+                            </div>
+                            <div
+                                class="w-12 bg-green-600 h-5 text-xs text-white text-center leading-5 rounded-sm -ml-1 mr-1">
+                                251M
+                            </div>
+                            <div class="w-9 bg-gray-600 h-5 text-xs text-white text-center leading-5 rounded-sm z-10">
+                                npm
+                            </div>
+                            <div
+                                class="w-12 bg-blue-1 h-5 text-xs text-white text-center leading-5 rounded-sm -ml-1 mr-1">
+                                v3.3.1
+                            </div>
+                            <div class="w-12 bg-gray-600 h-5 text-xs text-white text-center leading-5 rounded-sm z-10">
+                                license
+                            </div>
+                            <div
+                                class="w-10 bg-green-600 h-5 text-xs text-white text-center leading-5 rounded-sm -ml-1 mr-1">
+                                MIT
+                            </div>
+                        </li>
+                        <li class="py-2 border-b border-gray-200 text-2xl">Documentation</li>
+                        <li class="py-4">For full documentation, visit tailwindcss.com.</li>
+                        <li class="py-2 border-b border-gray-200 text-2xl">Community</li>
+                        <li class="py-4">For help, discussion about best practices, or any other conversation that would
+                            benefit from being searchable:</li>
+                        <li class="my-2 text-blue-400">Discuss Tailwind CSS on GitHub</li>
+                        <li class="py-4">For casual chit-chat with others using the framework:</li>
+                        <li class="my-2 text-blue-400">Join the Tailwind CSS Discord Server</li>
+                        <li class="py-2 border-b border-gray-200 text-2xl">Contributing</li>
+                        <li class="py-4">If you're interested in contributing to Tailwind CSS, please read our
+                            contributing docs before submitting a pull request.</li>
+                    </ul>
+
+                </ul>
+            </div>
+            <ul class="m-5 w-3/12">
+                <li>About</li>
+                <li class="font-light my-6">A utility-first CSS framework for rapid UI development.</li>
+                <li class="text-blue-600 text-sm font-semibold flex items-center mb-3">
+                    <svg t="1680258123343" class="icon mr-2" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="5717" width="16" height="16">
+                        <path
+                            d="M607.934444 417.856853c-6.179746-6.1777-12.766768-11.746532-19.554358-16.910135l-0.01228 0.011256c-6.986111-6.719028-16.47216-10.857279-26.930349-10.857279-21.464871 0-38.864146 17.400299-38.864146 38.864146 0 9.497305 3.411703 18.196431 9.071609 24.947182l-0.001023 0c0.001023 0.001023 0.00307 0.00307 0.005117 0.004093 2.718925 3.242857 5.953595 6.03853 9.585309 8.251941 3.664459 3.021823 7.261381 5.997598 10.624988 9.361205l3.203972 3.204995c40.279379 40.229237 28.254507 109.539812-12.024871 149.820214L371.157763 796.383956c-40.278355 40.229237-105.761766 40.229237-146.042167 0l-3.229554-3.231601c-40.281425-40.278355-40.281425-105.809861 0-145.991002l75.93546-75.909877c9.742898-7.733125 15.997346-19.668968 15.997346-33.072233 0-23.312962-18.898419-42.211381-42.211381-42.211381-8.797363 0-16.963347 2.693342-23.725354 7.297197-0.021489-0.045025-0.044002-0.088004-0.066515-0.134053l-0.809435 0.757247c-2.989077 2.148943-5.691629 4.669346-8.025791 7.510044l-78.913281 73.841775c-74.178443 74.229608-74.178443 195.632609 0 269.758863l3.203972 3.202948c74.178443 74.127278 195.529255 74.127278 269.707698 0l171.829484-171.880649c74.076112-74.17435 80.357166-191.184297 6.282077-265.311575L607.934444 417.856853z"
+                            fill="#5D5D5D" p-id="5718"></path>
+                        <path
+                            d="M855.61957 165.804257l-3.203972-3.203972c-74.17742-74.178443-195.528232-74.178443-269.706675 0L410.87944 334.479911c-74.178443 74.178443-78.263481 181.296089-4.085038 255.522628l3.152806 3.104711c3.368724 3.367701 6.865361 6.54302 10.434653 9.588379 2.583848 2.885723 5.618974 5.355985 8.992815 7.309476 0.025583 0.020466 0.052189 0.041956 0.077771 0.062422l0.011256-0.010233c5.377474 3.092431 11.608386 4.870938 18.257829 4.870938 20.263509 0 36.68962-16.428158 36.68962-36.68962 0-5.719258-1.309832-11.132548-3.645017-15.95846l0 0c-4.850471-10.891048-13.930267-17.521049-20.210297-23.802102l-3.15383-3.102664c-40.278355-40.278355-24.982998-98.79612 15.295358-139.074476l171.930791-171.830507c40.179095-40.280402 105.685018-40.280402 145.965419 0l3.206018 3.152806c40.279379 40.281425 40.279379 105.838513 0 146.06775l-75.686796 75.737962c-10.296507 7.628748-16.97358 19.865443-16.97358 33.662681 0 23.12365 18.745946 41.87062 41.87062 41.87062 8.048303 0 15.563464-2.275833 21.944801-6.211469 0.048095 0.081864 0.093121 0.157589 0.141216 0.240477l1.173732-1.083681c3.616364-2.421142 6.828522-5.393847 9.529027-8.792247l79.766718-73.603345C929.798013 361.334535 929.798013 239.981676 855.61957 165.804257z"
+                            fill="#5D5D5D" p-id="5719"></path>
+                    </svg>
+                    tailwindcss.com/
+                </li>
+                <li>
+                    <span
+                        class="bg-blue-100 text-xs rounded-xl text-blue-500 m-1 inline-block text-center w-8">css</span><span
+                        class="bg-blue-100 text-xs rounded-xl text-blue-500 m-1 inline-block text-center w-16">postcss</span><span
+                        class="bg-blue-100 text-xs rounded-xl text-blue-500 m-1 inline-block text-center w-20">responsive</span>
+                    <span
+                        class="bg-blue-100 text-xs rounded-xl text-blue-500 m-1 inline-block text-center w-28">css-framework</span><span
+                        class="bg-blue-100 text-xs rounded-xl text-blue-500 m-1 inline-block text-center w-28">functional-css</span>
+                    <span
+                        class="bg-blue-100 text-xs rounded-xl text-blue-500 m-1 inline-block text-center w-28">utility-classes</span><span
+                        class="bg-blue-100 text-xs rounded-xl text-blue-500 m-1 inline-block text-center w-24">tailwindcss</span>
+
+                </li>
+                <li class="flex items-center text-gray-600 text-sm py-1 pt-4">
+                    <svg aria-hidden="true" height="14" viewBox="0 0 16 16" version="1.1" width="14"
+                        data-view-component="true" class="octicon octicon-book mr-2">
+                        <path
+                            d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z">
+                        </path>
+                    </svg>
+                    Readme
+                </li>
+                <li class="flex items-center text-gray-600 text-sm py-1"><svg aria-hidden="true" height="16"
+                        viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+                        class="octicon octicon-law mr-2">
+                        <path
+                            d="M8.75.75V2h.985c.304 0 .603.08.867.231l1.29.736c.038.022.08.033.124.033h2.234a.75.75 0 0 1 0 1.5h-.427l2.111 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.006.005-.01.01-.045.04c-.21.176-.441.327-.686.45C14.556 10.78 13.88 11 13 11a4.498 4.498 0 0 1-2.023-.454 3.544 3.544 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L12.178 4.5h-.162c-.305 0-.604-.079-.868-.231l-1.29-.736a.245.245 0 0 0-.124-.033H8.75V13h2.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5h2.5V3.5h-.984a.245.245 0 0 0-.124.033l-1.289.737c-.265.15-.564.23-.869.23h-.162l2.112 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.016.015-.045.04c-.21.176-.441.327-.686.45C4.556 10.78 3.88 11 3 11a4.498 4.498 0 0 1-2.023-.454 3.544 3.544 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L2.178 4.5H1.75a.75.75 0 0 1 0-1.5h2.234a.249.249 0 0 0 .125-.033l1.288-.737c.265-.15.564-.23.869-.23h.984V.75a.75.75 0 0 1 1.5 0Zm2.945 8.477c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327Zm-10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327Z">
+                        </path>
+                    </svg> MIT license</li>
+                <li class="flex items-center text-gray-600 text-sm py-1"><svg aria-hidden="true" height="16"
+                        viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+                        class="octicon octicon-code-of-conduct mr-2">
+                        <path
+                            d="M8.048 2.241c.964-.709 2.079-1.238 3.325-1.241a4.616 4.616 0 0 1 3.282 1.355c.41.408.757.86.996 1.428.238.568.348 1.206.347 1.968 0 2.193-1.505 4.254-3.081 5.862-1.496 1.526-3.213 2.796-4.249 3.563l-.22.163a.749.749 0 0 1-.895 0l-.221-.163c-1.036-.767-2.753-2.037-4.249-3.563C1.51 10.008.007 7.952.002 5.762a4.614 4.614 0 0 1 1.353-3.407C3.123.585 6.223.537 8.048 2.24Zm-1.153.983c-1.25-1.033-3.321-.967-4.48.191a3.115 3.115 0 0 0-.913 2.335c0 1.556 1.109 3.24 2.652 4.813C5.463 11.898 6.96 13.032 8 13.805c.353-.262.758-.565 1.191-.905l-1.326-1.223a.75.75 0 0 1 1.018-1.102l1.48 1.366c.328-.281.659-.577.984-.887L9.99 9.802a.75.75 0 1 1 1.019-1.103l1.384 1.28c.295-.329.566-.661.81-.995L12.92 8.7l-1.167-1.168c-.674-.671-1.78-.664-2.474.03-.268.269-.538.537-.802.797-.893.882-2.319.843-3.185-.032-.346-.35-.693-.697-1.043-1.047a.75.75 0 0 1-.04-1.016c.162-.191.336-.401.52-.623.62-.748 1.356-1.637 2.166-2.417Zm7.112 4.442c.313-.65.491-1.293.491-1.916v-.001c0-.614-.088-1.045-.23-1.385-.143-.339-.357-.633-.673-.949a3.111 3.111 0 0 0-2.218-.915c-1.092.003-2.165.627-3.226 1.602-.823.755-1.554 1.637-2.228 2.45l-.127.154.562.566a.755.755 0 0 0 1.066.02l.794-.79c1.258-1.258 3.312-1.31 4.594-.032.396.394.792.791 1.173 1.173Z">
+                        </path>
+                    </svg> Code of conduct</li>
+                <li class="flex items-center text-gray-600 text-sm py-1"><svg aria-hidden="true" height="16"
+                        viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+                        class="octicon octicon-star mr-2">
+                        <path
+                            d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+                        </path>
+                    </svg> 66.7k stars</li>
+                <li class="flex items-center text-gray-600 text-sm py-1"><svg aria-hidden="true" height="16"
+                        viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+                        class="octicon octicon-eye mr-2">
+                        <path
+                            d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z">
+                        </path>
+                    </svg> 593 watching</li>
+                <li class="flex items-center text-gray-600 text-sm py-1 border-b border-gray-300 pb-5"><svg
+                        aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                        data-view-component="true" class="octicon octicon-repo-forked mr-2">
+                        <path
+                            d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
+                        </path>
+                    </svg>3.4k forks</li>
+                <li class="py-6">Packages</li>
+                <li class="text-xs text-gray-400 border-b border-gray-300 pb-5">No packages published</li>
+            </ul>
+        </div>
+
+        <div class="flex w-3/5 m-auto border-t border-gray-300 py-6 justify-between">
+            <div class="flex items-center text-xs text-gray-400">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24"
+                    data-view-component="true" class="octicon octicon-mark-github mr-2">
+                    <path
+                        d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                    </path>
+                </svg>
+                © 2023 GitHub, Inc.
+            </div>
+            <ul class="flex items-center text-blue-400 text-xs">
+                <li class="mr-8 ">Terms</li>
+                <li class="mr-8 ">Privacy</li>
+                <li class="mr-8 ">Security</li>
+                <li class="mr-8 ">Status</li>
+                <li class="mr-8 ">Docs</li>
+                <li class="mr-8 ">Contact GitHub</li>
+                <li class="mr-8 ">Pricing</li>
+                <li class="mr-8 ">API</li>
+                <li class="mr-8 ">Training</li>
+                <li class="mr-8 ">Blog</li>
+                <li class="mr-32 ">About</li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

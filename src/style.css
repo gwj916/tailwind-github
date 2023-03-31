@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.clearfix:after {
+  content: ".";
+  color: royalblue;
+  font-size: 65px;
+  position: relative;
+  top:-35px;
+}
